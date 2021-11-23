@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Search Results</title>
+        <link rel="stylesheet" href="/searchResultsStyle.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Search Results</h1>
+        </header>
+
+        <aside>
+            <section>
+                <input type="search" value="song">
+                <input type="search" value="artist">
+                <input type="search" value="album">
+                <fieldset>
+                    <label for="genre">Select a Genre</label>
+                    <select name="genre" id="genre">
+                      <option>Alternative</option>
+                      <option>Country</option>
+                      <option selected="selected">Pop</option>
+                      <option>Rap</option>
+                      <option>Rock</option>
+                    </select>
+                </fieldset>
+                <button></button>
+            </section>
+            <section>
+                <h3>Recent Searches</h3>
+                <ul>
+                    <li>Kanye West</li>
+                    <li>Beyonce</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main>
+            <table>
+                <tr>
+                  <th>Song</th>
+                  <th>Artist</th>
+                  <th>Album</th>
+                </tr>
+                <tr>
+                  <td>Kanye West</td>
+                  <td>Homecoming</td>
+                  <td>Graduation</td>
+                </tr>
+              </table>
+        </main>
+        
+
+        <script src="/searchResultsScript.js"></script>
+    </body>
+</html>
