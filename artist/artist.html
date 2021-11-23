@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Search Results</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/searchResultsStyle.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Artist Page</h1>
+        </header>
+
+        <aside>
+            <section>
+                <input type="search" value="song">
+                <input type="search" value="artist">
+                <input type="search" value="album">
+                <fieldset>
+                    <label for="genre">Select a Genre</label>
+                    <select name="genre" id="genre">
+                        <!-- Can add more genres or can pull from api to see available genres -->
+                      <option>Alternative</option>
+                      <option>Country</option>
+                      <option selected="selected">Pop</option>
+                      <option>Rap</option>
+                      <option>Rock</option>
+                    </select>
+                </fieldset>
+                <button></button>
+            </section>
+            <section>
+                <h4>Recent Searches</h4>
+                <ul>
+                    <!-- Will be updated through javascript pulled from local storage -->
+                    <li>Kanye West</li>
+                    <li>Beyonce</li>
+                </ul>
+            </section>
+        </aside>
+
+        <main>
+            <section>
+                <h2>Artist's Name</h2>
+                <p>info goes here</p>
+                <!-- Picutre of artist -->
+                <img>
+            </section>
+
+            <section>
+                <h4>Upcoming Events</h4>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <!-- This whole section will be populated by the music API -->
+            <!-- Album cover can go here -->
+                <img>
+                <h3>Album Name</h3>
+                <p>Album Year</p>
+                <ol>
+                    <li>track 1</li>
+                    <li>track 2</li>
+                    <li>track 3</li>
+                </ol>
+            </section>
+        </main>
+
+        <script src="/searchResultsScript.js"></script>
+    </body>
+</html>
