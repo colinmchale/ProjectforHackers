@@ -5,41 +5,52 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Search Results</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./Assets/css/artistStyle.css">
+        <title>Artist Page</title>
     </head>
 
     <body>
-        <header>
-            <h1>Artist Page</h1>
-        </header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">LyricalHackers</a>
+        </nav>
 
         <aside>
             <section>
-                <input type="search" value="song">
-                <input type="search" value="artist">
-                <input type="search" value="album">
-                <fieldset>
-                    <label for="genre">Select a Genre</label>
-                    <select name="genre" id="genre">
-                        <!-- Can add more genres or can pull from api to see available genres -->
-                      <option>Alternative</option>
-                      <option>Country</option>
-                      <option selected="selected">Pop</option>
-                      <option>Rap</option>
-                      <option>Rock</option>
-                    </select>
-                </fieldset>
-                <button></button>
+                <form class="container col-6">
+                    <div class="form-group">
+                      <label for="formGroupExampleInput">Song:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                    </div>
+                    <div class="form-group">
+                      <label for="formGroupExampleInput2">Artist:</label>
+                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Album:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                    </div>
+                    <fieldset>
+                        <label for="genre">Select a Genre</label>
+                        <select name="genre" id="genre">
+                          <option>Alternative</option>
+                          <option>Country</option>
+                          <option selected="selected">Pop</option>
+                          <option>Rap</option>
+                          <option>Rock</option>
+                        </select>
+                    </fieldset>
+                    <button>Search</button>
+                  </form>
             </section>
             <section>
-                <h4>Recent Searches</h4>
-                <ul>
-                    <!-- Will be updated through javascript pulled from local storage -->
-                    <li>Kanye West</li>
-                    <li>Beyonce</li>
-                </ul>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Recent Searches</h5>
+                      <a href="#" class="card-link">Jay Z</a>
+                      <a href="#" class="card-link">Beyonce</a>
+                    </div>
+                  </div>
             </section>
         </aside>
 
