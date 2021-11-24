@@ -12,22 +12,19 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
-            <a class="navbar-brand" href="index.html">LyricalHackers</a>
+            <a class="navbar-brand pl-2" href="index.html">LyricalHackers</a>
             <form class="form-inline ml-auto p-2">
                 <input class="form-control mr-sm-2" type="text" placeholder="Search Artist" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
         </nav>
         
-
-        
-
-        <main class="container row">
+        <main class="row ml-2">
 
             <aside class="row col-3 justify-content-start">
                 <div class="row card" style="width: 18rem;">
                     <div class="card-body">
-                      <h5 class="card-title">Recent Searches</h5>
+                      <h5 class="card-title pl-2">Recent Searches</h5>
                       <ul>
                           <li><a href="#" class="card-link">Jay Z</a></li>
                           <li><a href="#" class="card-link">Beyonce</a></li>
@@ -36,15 +33,17 @@
                   </div>
             </aside>
                 
-            <div class="col-9">
-                <section class="">
-                    <h2>Artist's Name</h2>
-                    <p>info goes here</p>
-                    <!-- Picutre of artist -->
-                    <img>
+            <div class="col-9 m-auto pt-2">
+                <section class="d-flex justify-content-start flex-wrap">
+                    <h2 class="col-9">Artist's Name</h2>
+                        <!-- Picutre of artist -->
+                    <img class="col-3">
+                    <p class="col-9">info goes here</p>
                 </section>
 
-                <section>
+                <br><br>
+
+                <section class="d-flex justify-content-center align-items-center">
                     <h4>Upcoming Events</h4>
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
@@ -72,17 +71,20 @@
                     </div>
                 </section>
 
-                <section>
+                <br><br>
+
+                <section class="d-flex justify-content-center flex-wrap">
                     <!-- This whole section will be populated by the music API -->
                 <!-- Album cover can go here -->
-                    <img>
-                    <h3>Album Name</h3>
-                    <p>Album Year</p>
-                    <ol>
+                    <img class="col-2">
+                    <h3 class="col-10">Album Name</h3>
+                    <p class="col-4">Album Year</p>
+                    <ol class="col-4">
                         <li>track 1</li>
                         <li>track 2</li>
                         <li>track 3</li>
                     </ol>
+                    
                 </section>
             </div>
         </main>
