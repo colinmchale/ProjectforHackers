@@ -5,71 +5,55 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./Assets/css/searchResultsStyle.css">
         <title>Search Results</title>
     </head>
 
     <body>
-        <nav class="navbar navbar-light bg-light justify-content-center">
-            <a class="navbar-brand" href="index.html">LyricalHackers</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+            <a class="navbar-brand pl-2" href="index.html">LyricalHackers</a>
+            <form class="form-inline ml-auto p-2">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Artist" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
         </nav>
     
+        <main class="row ml-2">
 
-        <aside>
-            <section>
-                <form class="container col-6">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Song:</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-                    </div>
-                    <div class="form-group">
-                      <label for="formGroupExampleInput2">Artist:</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Album:</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                    </div>
-                    <fieldset>
-                        <label for="genre">Select a Genre</label>
-                        <select name="genre" id="genre">
-                          <option>Alternative</option>
-                          <option>Country</option>
-                          <option selected="selected">Pop</option>
-                          <option>Rap</option>
-                          <option>Rock</option>
-                        </select>
-                    </fieldset>
-                    <button>Search</button>
-                  </form>
-            </section>
-            <section>
-                <div class="card" style="width: 18rem;">
+            <aside class="row col-3 justify-content-start">
+                <div class="row card" style="width: 18rem;">
                     <div class="card-body">
-                      <h5 class="card-title">Recent Searches</h5>
-                      <a href="#" class="card-link">Jay Z</a>
-                      <a href="#" class="card-link">Beyonce</a>
+                      <h5 class="card-title pl-2">Recent Searches</h5>
+                      <ul>
+                          <li><a href="#" class="card-link">Jay Z</a></li>
+                          <li><a href="#" class="card-link">Beyonce</a></li>
+                      </ul>
                     </div>
                   </div>
-            </section>
-        </aside>
+            </aside>
+                
+            <div class="col-9 m-auto pt-2">
+                <section class="d-flex justify-content-start flex-wrap">
+                    <h2 class="col-12">Search Results</h2>
+                </section>
 
-        <main>
-            <table class="container">
-                <tr>
-                  <th>Song</th>
-                  <th>Artist</th>
-                  <th>Album</th>
-                </tr>
-                <tr>
-                  <td>Kanye West</td>
-                  <td>Homecoming</td>
-                  <td>Graduation</td>
-                </tr>
-              </table>
+                <section>
+                    <table class="container">
+                        <tr>
+                          <th>Song</th>
+                          <th>Artist</th>
+                          <th>Album</th>
+                        </tr>
+                        <tr>
+                          <td>Kanye West</td>
+                          <td>Homecoming</td>
+                          <td>Graduation</td>
+                        </tr>
+                      </table>
+                </section>
+            </div>
         </main>
-        
 
         <script src="./Assets/js/searchResultsScript.js"></script>
     </body>
