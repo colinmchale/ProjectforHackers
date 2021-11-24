@@ -5,56 +5,55 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Search Results</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./Assets/css/searchResultsStyle.css">
+        <title>Search Results</title>
     </head>
 
     <body>
-        <header>
-            <h1>Search Results</h1>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+            <a class="navbar-brand pl-2" href="index.html">LyricalHackers</a>
+            <form class="form-inline ml-auto p-2">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Artist" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+        </nav>
+    
+        <main class="row ml-2">
 
-        <aside>
-            <section>
-                <input type="search" value="song">
-                <input type="search" value="artist">
-                <input type="search" value="album">
-                <fieldset>
-                    <label for="genre">Select a Genre</label>
-                    <select name="genre" id="genre">
-                      <option>Alternative</option>
-                      <option>Country</option>
-                      <option selected="selected">Pop</option>
-                      <option>Rap</option>
-                      <option>Rock</option>
-                    </select>
-                </fieldset>
-                <button></button>
-            </section>
-            <section>
-                <h3>Recent Searches</h3>
-                <ul>
-                    <li>Kanye West</li>
-                    <li>Beyonce</li>
-                </ul>
-            </section>
-        </aside>
+            <aside class="row col-3 justify-content-start">
+                <div class="row card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title pl-2">Recent Searches</h5>
+                      <ul>
+                          <li><a href="#" class="card-link">Jay Z</a></li>
+                          <li><a href="#" class="card-link">Beyonce</a></li>
+                      </ul>
+                    </div>
+                  </div>
+            </aside>
+                
+            <div class="col-9 m-auto pt-2">
+                <section class="d-flex justify-content-start flex-wrap">
+                    <h2 class="col-12">Search Results</h2>
+                </section>
 
-        <main>
-            <table>
-                <tr>
-                  <th>Song</th>
-                  <th>Artist</th>
-                  <th>Album</th>
-                </tr>
-                <tr>
-                  <td>Kanye West</td>
-                  <td>Homecoming</td>
-                  <td>Graduation</td>
-                </tr>
-              </table>
+                <section>
+                    <table class="container">
+                        <tr>
+                          <th>Song</th>
+                          <th>Artist</th>
+                          <th>Album</th>
+                        </tr>
+                        <tr>
+                          <td>Kanye West</td>
+                          <td>Homecoming</td>
+                          <td>Graduation</td>
+                        </tr>
+                      </table>
+                </section>
+            </div>
         </main>
-        
 
         <script src="./Assets/js/searchResultsScript.js"></script>
     </body>

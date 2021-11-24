@@ -13,3 +13,7 @@ function getMusicInfo() {
 }
 
 getMusicInfo()
+
+//skeleton functions to implement into working javascript API
+
+function getAlbum()

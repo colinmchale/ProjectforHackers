@@ -5,92 +5,88 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Search Results</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./Assets/css/artistStyle.css">
+        <title>Artist Page</title>
     </head>
 
     <body>
-        <header>
-            <h1>Artist Page</h1>
-        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+            <a class="navbar-brand pl-2" href="index.html">LyricalHackers</a>
+            <form class="form-inline ml-auto p-2">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search Artist" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+        </nav>
+        
+        <main class="row ml-2">
 
-        <aside>
-            <section>
-                <input type="search" value="song">
-                <input type="search" value="artist">
-                <input type="search" value="album">
-                <fieldset>
-                    <label for="genre">Select a Genre</label>
-                    <select name="genre" id="genre">
-                        <!-- Can add more genres or can pull from api to see available genres -->
-                      <option>Alternative</option>
-                      <option>Country</option>
-                      <option selected="selected">Pop</option>
-                      <option>Rap</option>
-                      <option>Rock</option>
-                    </select>
-                </fieldset>
-                <button></button>
-            </section>
-            <section>
-                <h4>Recent Searches</h4>
-                <ul>
-                    <!-- Will be updated through javascript pulled from local storage -->
-                    <li>Kanye West</li>
-                    <li>Beyonce</li>
-                </ul>
-            </section>
-        </aside>
-
-        <main>
-            <section>
-                <h2>Artist's Name</h2>
-                <p>info goes here</p>
-                <!-- Picutre of artist -->
-                <img>
-            </section>
-
-            <section>
-                <h4>Upcoming Events</h4>
-                <div class="card" style="width: 18rem;">
+            <aside class="row col-3 justify-content-start">
+                <div class="row card" style="width: 18rem;">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
+                      <h5 class="card-title pl-2">Recent Searches</h5>
+                      <ul>
+                          <li><a href="#" class="card-link">Jay Z</a></li>
+                          <li><a href="#" class="card-link">Beyonce</a></li>
+                      </ul>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="card-link">Card link</a>
-                    </div>
-                </div>
-            </section>
+                  </div>
+            </aside>
+                
+            <div class="col-9 m-auto pt-2">
+                <section class="d-flex justify-content-start flex-wrap">
+                    <h2 class="col-9">Artist's Name</h2>
+                        <!-- Picutre of artist -->
+                    <img class="col-3">
+                    <p class="col-9">info goes here</p>
+                </section>
 
-            <section>
-                <!-- This whole section will be populated by the music API -->
-            <!-- Album cover can go here -->
-                <img>
-                <h3>Album Name</h3>
-                <p>Album Year</p>
-                <ol>
-                    <li>track 1</li>
-                    <li>track 2</li>
-                    <li>track 3</li>
-                </ol>
-            </section>
+                <br><br>
+
+                <section class="d-flex justify-content-center align-items-center">
+                    <h4>Upcoming Events</h4>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        </div>
+                    </div>
+                </section>
+
+                <br><br>
+
+                <section class="d-flex justify-content-center flex-wrap">
+                    <!-- This whole section will be populated by the music API -->
+                <!-- Album cover can go here -->
+                    <img class="col-2">
+                    <h3 class="col-10">Album Name</h3>
+                    <p class="col-4">Album Year</p>
+                    <ol class="col-4">
+                        <li>track 1</li>
+                        <li>track 2</li>
+                        <li>track 3</li>
+                    </ol>
+                    
+                </section>
+            </div>
         </main>
 
         <script src="./Assets/js/artistScript.js"></script>
