@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
+*, *:before, *:after {
+  font-family: 'Fredoka One', cursive !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
+.jumbotron{
+  background-image: url("http://thumbs.dreamstime.com/x/retro-s-seamless-pattern-background-vintage-memphis-fashion-style-illustration-ideal-fabric-design-paper-print-website-57384167.jpg");
+  color: white;
+}
+
+.jumbotron h1{
+  margin: auto;
+  transform: rotate(10deg);
+  font-size: 350%!important;
+  padding: 2%;
+  border: 1px solid white;
+  width: 50%;
+  border-radius: 80%;
+  background-color: orangered;
+  color: white !important;
+}
+.triangle{
+  width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 50px solid transparent;
+	position: relative;
+  margin-left: 40%;
+  transform: rotate(10deg);
+	border-top: 60px solid orangered;
+  margin-top: -1.8%;
+}
+#ghost{
+  opacity: 0;
+  display: none;
+ }
+
+h1{
+  font-family: 'Fredoka One', cursive !important;
+  text-align: center;
+}
+
+input{
+  width: 25%;
+  height: 50px;
+  font-size: 2em;
+  text-align: center;
+}
+
+button{
+  width: 25%;
+  height: 45px;
+  font-size: 1.25em;
+  border: 1px solid grey;
+  border-radius: 2%;
+}
+
+button:hover{
+  background-color: gray;
+  color: white;
+  border: 1px solid black;
+}
+
+#searchArea{
+  text-align: center;
+}
+
+img{
+  float: left;
+  margin-right: 10%;
+  margin-left: 25%;
+}
+
+p{
+  margin-right: 5%;
+  font-family: sans-serif;
+}
+
+#lyrics{
+  width: 80%;
+  margin: auto;
+}
