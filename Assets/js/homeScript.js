@@ -30,3 +30,30 @@ document.addEventListener('DOMContentLoaded' , () => {
   }, false);
   
   });
+
+  let songButton = document.querySelector('#getSongs')
+  let albumButton = document.querySelector('#getAlbums')
+
+  albumButton.addEventListener('click', getAlbums);
+
+  function getAlbums(event) {
+	  event.preventDefault();
+	  let artistName = document.getElementById('artistName').value;
+	  fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=' + artistName, {
+			"method": "GET",
+			"headers": {
+				"x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+				"x-rapidapi-key": "b527f11ed1mshff817c77ab9f92cp1d9953jsnd565aa730026"
+			}
+	})
+	.then(response => {
+		return response.json()
+	})
+	.then(data => {
+		console.log(data)
+	})
+	.catch(err => {
+		console.error(err);
+	});
+  }
+  
