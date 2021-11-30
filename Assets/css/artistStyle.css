@@ -1,4 +1,10 @@
 /* Style Sheet */
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
+* {
+    font-family: 'Fredoka One', cursive !important;
+}
+
 
 #artist-picture {
     visibility: hidden;
@@ -6,4 +12,8 @@
 
 ul {
     list-style: none;
+}
+
+.searchSide {
+    background-color: rgb(137, 184, 247);
 }
