@@ -69,10 +69,24 @@ button:hover{
   text-align: center;
 }
 
-img{
+/* img{
   float: left;
   margin-right: 10%;
   margin-left: 25%;
+} */
+
+.form-group{
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 p{
@@ -84,5 +98,29 @@ p{
   width: 80%;
   margin: auto;
 }
+.albumUL {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
 
+.albumUL li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
+#gray{
+  background-color: rgb(224, 224, 224);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#white {
+  background-color: white;
+  padding-top: -15px;
+  padding-bottom: -15px;
+}
