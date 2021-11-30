@@ -1,1 +1,5 @@
 /* Style Sheet */
+
+#artist-picture {
+    visibility: hidden;
+}
