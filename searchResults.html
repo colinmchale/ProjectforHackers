@@ -1,66 +1,97 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./Assets/css/searchResultsStyle.css">
-        <title>Search Results</title>
-    </head>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./Assets/css/searchResultsStyle.css" />
+    <title>Search Results</title>
+</head>
+
+
+
+
+
+<body>
+
+
+
+    <img id="image" src="Assets\img\cd.png" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
+        <div class="animate glow blur delay-1">
             <a class="navbar-brand pl-2" href="index.html">LyricalHackers</a>
-            <form class="form-inline ml-auto p-2" id = "SongSearch">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search Artist" id="SearchInput" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-        </nav>
-    
-        <main class="row ml-2">
+        </div>
 
-            <aside class="row col-3 justify-content-start">
-                <div class="row card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title pl-2">Recent Searches</h5>
-                      <ul>
-                          <li><a href="#" class="card-link">Jay Z</a></li>
-                          <li><a href="#" class="card-link">Beyonce</a></li>
-                      </ul>
+        <div class="animate glow blur delay-2"></div>
+        <form class="form-inline ml-auto p-2" id="SongSearch">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Artist" id="SearchInput"
+                aria-label="Search" />
+
+            <div class="animate glow blur delay-3"></div>
+            <button class="button-3d" type="submit">
+                Search
+            </button>
+        </form>
+    </nav>
+
+
+
+    <main class="row ml-2">
+        <aside class="row col-3 justify-content-start">
+            <div class="row card" style="width: 18rem">
+                <div class="card-body">
+                    <div class="animate glow blur delay-4">
+                        <h5 class="card-title pl-2">Recent Searches</h5>
                     </div>
-                  </div>
-            </aside>
-                
-            <div class="col-9 m-auto pt-2">
-                <section class="d-flex justify-content-start flex-wrap">
+                    <ul>
+                        <li><a href="#" class="card-link">Jay Z</a></li>
+                        <li><a href="#" class="card-link">Beyonce</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+
+        <div class="col-9 m-auto pt-2">
+            <section class="d-flex justify-content-start flex-wrap">
+                <div class="animate glow blur delay-5">
                     <h2 class="col-12">Search Results</h2>
-                    
-                    
-                </section>
+                </div>
+            </section>
 
+
+            <div class="animate glow blur delay-5">
                 <section>
-
                     <div class="container">
-
-                        <div class="ArtistHeaderName" id = "Headerblock">
-                            <header class="HeaderNameClass" id = "NameClass">
-                                <li><a href="#" class="card-link" aria-placeholder="Artists"></a></li>
+                        <div class="ArtistHeaderName" id="Headerblock">
+                            <header class="HeaderNameClass" id="NameClass">
+                                <li>
+                                    <a href="#" class="card-link" aria-placeholder="Artists"></a>
+                                </li>
                             </header>
                         </div>
+                    
 
-                        <div class="SongListBlock" id = "BlockOfInfo" >
-                            <ul class="songLists" id = "artists"> 
-                            </ul>
+
+
+                    <div class="SongListBlock" id="BlockOfInfo">
+                        <div class="animate glow blur delay-5">
+                            <ul class="songLists" id="artists"></ul>
                         </div>
-
                     </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-                </section>
-            </div>
-        </main>
+    <script src="./Assets/js/searchResultsScript.js"></script>
+</body>
 
-        <script src="./Assets/js/searchResultsScript.js"></script>
-    </body>
 </html>
