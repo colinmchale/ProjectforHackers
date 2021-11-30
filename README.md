@@ -23,3 +23,14 @@ GitHub Repository: https://github.com/colinmchale/ProjectforHackers
 GitHub Pages: https://colinmchale.github.io/ProjectforHackers/
 
 ## Screenshots of Deployed Application
+
+![](./Assets/screenshots/lhHomePage.png)
+![](./Assets/screenshots/albumSearchPageBlank.png)
+![](./Assets/screenshots/albumSearchPageResults.png)
+![](./Assets/screenshots/albumSearchExternalLink.png)
+![](./Assets/screenshots/songSearchBlank.png)
+![](./Assets/screenshots/songSearchResults.png)
+![](./Assets/screenshots/eventSearchBlank.png)
+![](./Assets/screenshots/eventSearchResults.png)
+![](./Assets/screenshots/eventSearchExternalLink.png)
+
