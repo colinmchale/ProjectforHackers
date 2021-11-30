@@ -39,8 +39,6 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=lady-gaga', {
     });
   });
 
-
-
 fetch(`https://api.seatgeek.com/2/events?performers.slug=lady-gaga&client_id=MTk3NzQyNzh8MTYzODE5OTQ5Mi4zNzY5OTA2`, {
 	"method": "GET",
 	"headers": {
