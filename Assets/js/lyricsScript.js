@@ -28,27 +28,32 @@ function clearResults() {
         // console.log(response)
         // console.log(response.data)
         // create array here
-        // var arr = []
+        let albumArray = []
         let albumDisplay = document.getElementById("albumListResults");
   
         let albumUL = document.createElement("ul");
         albumUL.setAttribute("class", "albumUL");
         albumDisplay.append(albumUL);
+
+        count =0
   
         for (let i = 0; i < response.data.length; i++) {
           let currentAlbum = response.data[i];
           console.log(currentAlbum);
-  
-          let albumList = document.createElement("li");
+          
+          if (albumArray.includes(currentAlbum.album.title) === false) {
+            count ++
+
+            let albumList = document.createElement("li");
           albumUL.append(albumList);
-          let remainder = i % 2;
+          let remainder = count % 2;
           if (remainder !== 0) {
             albumList.setAttribute('id', 'white')
           } else {
             albumList.setAttribute('id', 'gray');
           }
   
-          var link = document.createElement("a");
+          let link = document.createElement("a");
           link.setAttribute("href", currentAlbum.link);
           link.textContent = currentAlbum.album.title;
           albumList.append(link);
@@ -56,6 +61,10 @@ function clearResults() {
           let coverImg = document.createElement("img");
           coverImg.setAttribute("src", currentAlbum.album.cover);
           albumList.append(coverImg);
+
+          albumArray.push(currentAlbum.album.title);
+          }
+          
           // if arr.includes albumName, don't push
           // MDN arr.includes (should give a true or false value)
         }
