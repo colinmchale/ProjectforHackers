@@ -1,5 +1,20 @@
 /* Style Sheet */
 
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+body, html {
+	position: relative;
+	height : 100%; 
+	width : 100%;  
+	margin: 0;
+}
+
+#image{
+  position:absolute;
+  width : 10%;
+  }
+
+
 fieldset {
     border: 0;
   }
@@ -18,7 +33,7 @@ fieldset {
 
   .songLists{
     padding: 10px;
-    list-style-type:square;
+    list-style-type: disc;
     grid-gap: 20px;
   }
 
@@ -31,8 +46,97 @@ fieldset {
     height:fit-content;
     border-radius: 15px;
     padding: 20px 20px 60px 20px;
-    background-color: rgb(72, 78, 75);
-    border: 2px solid rgb(227, 84, 79);
+    background-color: rgb(78, 175, 255);
+    border: 2px solid rgb(17, 0, 255);
+    box-shadow: 2cm;
   }
 
+  .button-3d{
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    width: 150px;
+    color:#ecf0f1;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px #53fff6;
+    background:#22cfe6;
+    text-align:center;
+    padding:16px 18px 14px;
+  
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+  
+    -webkit-box-shadow: 0px 6px 0px #30099b;
+    -moz-box-shadow: 0px 6px 0px #0038d3;
+    box-shadow: 0px 6px 0px #3f00d3ef;
+  }
+  
+  .button-3d:active{
+    -webkit-box-shadow: 0px 2px 0px #1a1231;
+    -moz-box-shadow: 0px 2px 0px #03000c;
+    box-shadow: 0px 2px 0px #12023d;
+    position:relative;
+    top:4px;
+  }
+  .animate{
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function:cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-fill-mode: backwards;
+    
+}
+
+.animate.glow{
+    animation-name: animate-glow;
+    animation-timing-function: ease;
+}
+
+.animate.blur{
+    animation-name: animate-blur;
+    animation-timing-function: ease;
+}
+
+@keyframes animate-blur{
+    0% {
+        opacity: 0;
+        filter:blur(30px)
+        
+    }
+    100%{
+        opacity: 1;
+        filter:blur(0px)
+    }
+}
+
+@keyframes animate-glow{
+    0% {
+        opacity: 0;
+        filter:brightness(3)saturate(3);
+        transform: scale(0.8, 0.8);
+    }
+    100%{
+        opacity: 1;
+        filter:brightness(1) saturate(1);
+        transform: scale(1,1)
+    }
+}
+
+.delay-1{
+    animation-delay: 0.6s;
+}
+.delay-2{
+    animation-delay: 0.7s;
+}
+.delay-3{
+    animation-delay: 0.8s;
+}
+.delay-4{
+    animation-delay: 0.9s;
+}
+.delay-5{
+    animation-delay: 1.0s;
+}
   
