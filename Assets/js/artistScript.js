@@ -47,14 +47,6 @@ function getArtist(event) {
     searchString.unshift(search)
     localStorage.setItem("artists", JSON.stringify(searchString));
 
-    // if (searchString === null) {
-    //     searchString = [];
-    // }
-    // searchString.push(search);
-    // let newSearchString = JSON.stringify(searchString);
-    // localStorage.setItem("artist", searchString);
-    // localStorage.setItem("artists", JSON.stringify(search));
-// }
     search = search.toLowerCase();
     search = search.replace(" ", "-");
     console.log(search);
