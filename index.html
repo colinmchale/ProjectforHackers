@@ -4,48 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <!-- MDB -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./Assets/css/homeStyle.css">
-</head>
-    
-    <title>Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./Assets/css/homeStyle.css">
+    <title>Lyrics Page</title>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light justify-content-center">
-        <a class="navbar-brand" href="index.html">LyricalHackers</a>
-      </nav>
+  <div class="jumbotron">
+    <h1 class="display-4">Whaddup, LyricalHackers!</h1>
+    <p class="lead" id="subheader">Welcome to our website! Here we aim to serve users who are looking to find their favorite artist's albums, songs, and upcoming events. Don't worry - all of our songs and albums are illegally downloaded and streamed, so you don't have to worry about being a rule-following nark. Check out our links below and get hackin'.</p>
+    <hr class="my-4">
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" id="linkButtons" href="./lyrics.html" role="button">Albums</a>
+      <a class="btn btn-primary btn-lg" id="linkButtons" href="./searchResults.html" role="button">Songs</a>
+      <a class="btn btn-primary btn-lg" id="linkButtons" href="./artist.html" role="button">Events</a>
+    </p>
+    
+  </div>
+        
 
-      <br><br>
-      
-      <!-- <form class="container col-6">
-        <div class="form-group">
-          <label for="formGroupExampleInput">Welcome to Lyrical Hackers!</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search Artist">
-        </div>
-        <button>Search</button> -->
-          
-          <form action="" method="get" id="form">
-      <div class="form-group">
-          <!-- <label for="q">Get Artist information over here</label> -->
-          <input type="text" id="artistName" name="q" class="form-control" placeholder="Enter Artist Name">
-      </div>
-      
-        <!-- <p>
-          <input type="submit" class="btn btn-primary" value="Get Songs" id="getSongs">
-        </p> -->
-        <p class="buttonContainer">
-          <input type="submit" class="btn btn-primary" value="Get Albums" id="getAlbums">
-        </p>
-      
-  </form>
-  
-  <div id="albumListResults"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
