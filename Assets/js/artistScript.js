@@ -7,8 +7,8 @@ let artistPicture = document.querySelector("#artist-picture");
 let artistLink = document.querySelector("#artist-link");
 let searchBtn = document.querySelector(".btn");
 let searchInput = document.querySelector(".search");
-let artistPicture = document.querySelector("#artist-picture");
-
+let recentSearch = document.querySelector("#recent-search");
+let searchString;
 
 
 function clearCards() {
@@ -17,11 +17,44 @@ function clearCards() {
     }
 };
 
+function renderSearchHistory() {
+    while (recentSearch.firstChild) {
+        recentSearch.removeChild(recentSearch.firstChild);
+    }
+
+    let recentArtists = localStorage.getItem("artists");
+    recentArtists = JSON.parse(recentArtists);
+    console.log(recentArtists);
+    
+
+    for (let i = 0; i < 10; i++) {
+        if (recentArtists !== null) {
+            let newA = document.createElement("li");
+            newA.textContent = recentArtists[i];
+            recentSearch.appendChild(newA);
+        } else {
+            return;
+        }
+    };
+};
+
 function getArtist(event) {
     event.preventDefault();
     clearCards();
-    artistPicture.setAttribute("visibility", "visible")
+    artistPicture.style.visibility = "visible";
     let search = searchInput.value;
+    renderSearchHistory();
+    searchString.unshift(search)
+    localStorage.setItem("artists", JSON.stringify(searchString));
+
+    // if (searchString === null) {
+    //     searchString = [];
+    // }
+    // searchString.push(search);
+    // let newSearchString = JSON.stringify(searchString);
+    // localStorage.setItem("artist", searchString);
+    // localStorage.setItem("artists", JSON.stringify(search));
+// }
     search = search.toLowerCase();
     search = search.replace(" ", "-");
     console.log(search);
@@ -93,7 +126,7 @@ function getArtist(event) {
                         
                         let cardTime = document.createElement("h5")
                         cardTime.setAttribute("class", "card-subtitle mb-2 text-muted");
-                        cardTime.textContent = data.events[i].datetime_local
+                        cardTime.textContent = data.events[i].datetime_local;
                         concert.append(cardTime);
                         
                         let cardText = document.createElement("p")
@@ -156,3 +189,10 @@ function getArtist(event) {
 };
 
 searchBtn.addEventListener("click", getArtist);
+
+if (!searchString) {
+    searchString = [];
+} else {
+    renderSearchHistory()
+}
+

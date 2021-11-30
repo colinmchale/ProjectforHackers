@@ -3,3 +3,7 @@
 #artist-picture {
     visibility: hidden;
 }
+
+ul {
+    list-style: none;
+}
